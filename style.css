@@ -6,7 +6,10 @@
 html {
     height: 100vh;
     width: 100vw;
+    font-size: 16px;
 }
+
+
 
 body {
     height: 100%;
@@ -38,10 +41,17 @@ img {
     transform: translateX(-50%);
 }
 
+
 @media screen and (min-width: 320px) {
     html {
-      font-size: calc(1.2em + 6 * ((100vw - 320px) / 680));
+      font-size: calc(16px + 6 * ((100vw - 320px) / 680));
     }
- 
   }
+  @media screen and (min-width: 1000px) {
+    html {
+      font-size: 22px;
+    }
+  } 
+
+
 

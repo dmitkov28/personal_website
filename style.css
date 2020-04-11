@@ -12,7 +12,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow-y: hidden;
 }
 
 img {
@@ -59,8 +58,14 @@ footer {
   }
 
   .content {
-    min-height: 100vh;
+    min-height: 95vh;
   }
 
+}
+
+@media screen and (max-height:500px){
+  .content {
+    margin:4em auto;
+  }
 }
 

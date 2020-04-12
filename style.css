@@ -3,7 +3,28 @@
     margin: 0;
     -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+img.workingonit {
+  width: 70%;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+}
+
+p, footer {
   font-family: 'Oswald', sans-serif;
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: 'Merriweather', sans-serif;
 }
 
 .content {
@@ -33,6 +54,20 @@ img {
     box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.3);
     position: relative;
     border: 2px solid lightgray;
+    opacity: 0;
+}
+
+.description-animation {
+  animation-name: popIn;
+  animation-duration: 800ms;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in-out;
+}
+
+@keyframes popIn {
+  0% {bottom:-200px}
+  100% {bottom: 0px; opacity:1;}
 }
 
 .description p:first-of-type {
@@ -58,6 +93,10 @@ img {
 }
 
 .menu-mobile {
+  display: none;
+}
+
+.navigation-mobile {
   display: none;
 }
 
@@ -101,6 +140,8 @@ footer {
     padding-right: 2em;
     flex-direction: column;
     align-items: flex-end;
+    z-index: 999;
+    cursor: pointer;
   }
 
  .bar {
@@ -112,12 +153,51 @@ footer {
    margin: 0.15em 0;
  }
 
+ .navigation-mobile {
+   position: absolute;
+   top: 0;
+   right: -100%;
+   width: 100%;
+   height: 100%;
+   z-index: 99;
+   background:whitesmoke;
+   border: lightgray;
+   align-items: center;
+   justify-content: center;
+   display:flex;
+   visibility: hidden;
+   transition: ease-in-out;
+  transition-duration: 800ms; 
+ }
+
+ .active {
+    visibility: visible;
+    right: 0;
+    transition: ease-in-out;
+    transition-duration: 800ms;
+ }
+
+ .navigation-mobile ul {
+   text-align: center;
+   list-style: none;
+ }
+
+ .navigation-mobile ul li {
+   margin: 3em auto;
+ }
+
+ .navigation-mobile ul li a {
+   text-decoration: none;
+   font-family: 'Merriweather', sans-serif;
+   color: #000;
+   font-size: 4em;
+ }
+
 
   footer {
     height: auto;
     display: flex;
     align-items: flex-end;
-    margin: 1em auto 0;
   }
 
 
@@ -131,3 +211,12 @@ footer {
 
 }
 
+
+/*CV*/
+div.conent.cv-background {
+  background: royalblue!important;
+}
+div.description.cv {
+  display: flex;
+  align-items: center;
+}

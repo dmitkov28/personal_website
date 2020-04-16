@@ -5,7 +5,7 @@ const navContent = document.querySelector('.navigation-mobile');
 const description = document.querySelector('.description');
 
 navButton.addEventListener('click', function(){
-    
+
     if(navContent.classList.contains('active')){
         navContent.classList.remove('active');
     } else {
@@ -13,6 +13,7 @@ navButton.addEventListener('click', function(){
     }
 
 });
+
 
 
 window.onload = ('load',() => {

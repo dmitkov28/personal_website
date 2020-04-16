@@ -165,9 +165,9 @@ footer {
    border: lightgray;
    align-items: center;
    justify-content: center;
-   display:flex;
-   visibility: hidden;
-   transition: ease-in-out;
+  display:flex;
+  visibility: hidden!important;
+  transition: ease-in-out;
   transition-duration: 800ms; 
  }
 

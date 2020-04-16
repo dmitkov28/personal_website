@@ -37,6 +37,16 @@ h1,h2,h3,h4,h5, button {
   
 }
 
+.bar {
+  background: #000;
+  height: 0.15em;
+  width: 2em;
+  display: block;
+  border-radius: 5px;
+  margin: 0.15em 0;
+}
+
+
 img {
   width: 200px;
   position: absolute;
@@ -147,14 +157,7 @@ footer {
     cursor: pointer;
   }
 
- .bar {
-   background: #000;
-   height: 0.15em;
-   width: 2em;
-   display: block;
-   border-radius: 5px;
-   margin: 0.15em 0;
- }
+ 
 
  .navigation-mobile {
   position: fixed;

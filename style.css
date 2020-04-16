@@ -6,7 +6,6 @@
 }
 
 body {
-  overflow-y: hidden;
   overflow-x: hidden;
 }
 
@@ -216,17 +215,22 @@ footer {
 
 form {
   width: 70%;
-  min-height: 70vh;
-  padding: 2em 1em;
+  min-height: 60vh;
+  padding: 0em 1em 2em;
   display: flex;
+  margin: 1em auto 0;
+  background: whitesmoke;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 2px solid lightgray;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.3);
 }
 
 
 .contact-row {
-  margin: 1.2em auto;
+  margin: 1em auto;
   width: 80%;
   display: flex;
   justify-content: center;
@@ -259,7 +263,7 @@ form {
 }
 
 .contact-row button {
-  width: 100%;
+  width: 60%;
   height: 40px;
   border-radius: 10px;
   border: 0;
@@ -275,11 +279,12 @@ button:focus {
 
 .contact-row textarea {
   width: 100%;
-  height: 200px;
+  height: 140px;
   padding: 1em;
   resize: none;
   border-radius: 10px;
   border: 2px solid lightgray;
+  background: transparent;
 }
 
 

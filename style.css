@@ -37,12 +37,32 @@ h1,h2,h3,h4,h5, button {
   
 }
 
+.menu-mobile {
+  display: none;
+}
+
 .bar {
-  border: 0.15em solid;
+  border: 0.15em solid #000; 
   width: 2em;
   display: block;
   border-radius: 5px;
   margin: 0.15em 0;
+  transition: ease-in-out 400ms;
+}
+
+.bar-2.open-2 {
+  opacity: 0;
+  transition: ease-in-out 400ms;
+}
+
+.bar-1.open-1 {
+  transform: rotate(-135deg)translateY(-0.7em);
+  transition: ease-in-out 400ms;
+}
+
+.bar-3.open-3 {
+  transform: rotate(135deg)translateY(0.8em);
+  transition: ease-in-out 400ms;
 }
 
 
@@ -103,10 +123,6 @@ img {
   font-weight: 200;
 }
 
-.menu-mobile {
-  display: none;
-}
-
 .navigation-mobile {
   display: none;
 }
@@ -142,21 +158,6 @@ footer {
     display: none;
   }
 
-  /*menu mobile*/
-   .menu-mobile {
-    width: 50%;
-    position: absolute;
-    top: 2em;
-    right: 0;
-    display: flex;
-    padding-right: 2em;
-    flex-direction: column;
-    align-items: flex-end;
-    z-index: 999;
-    cursor: pointer;
-  }
-
- 
 
  .navigation-mobile {
   position: fixed;
@@ -216,9 +217,22 @@ footer {
 
 
 @media screen and (max-width:
-400px){
+500px){
   
+ /*menu mobile*/
+ .menu-mobile {
+  width: 50%;
+  position: absolute;
+  top: 2em;
+  right: 0;
+  display: flex;
+  padding-right: 2em;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 999;
+  cursor: pointer;
 
+}
 
 }
 

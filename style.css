@@ -38,8 +38,7 @@ h1,h2,h3,h4,h5, button {
 }
 
 .bar {
-  background: #000;
-  height: 0.15em;
+  border: 0.15em solid;
   width: 2em;
   display: block;
   border-radius: 5px;

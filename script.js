@@ -28,18 +28,22 @@ document.querySelector('.bar.bar-3').style.transition='500ms';
         document.querySelector('.bar.bar-2').style.opacity='0';
 document.querySelector('.bar.bar-2').style.transition='500ms';
 
-document.querySelector('.bar.bar-1').style.transform='rotate(45deg)translate(0.6em, 0em)';
+document.querySelector('.bar.bar-1').style.transform='rotate(35deg)translate(0.95em, 0em)';
 document.querySelector('.bar.bar-1').style.transition='600ms';
 
-document.querySelector('.bar.bar-3').style.transform='rotate(-45deg)translate(0.6em, 0em)';
+document.querySelector('.bar.bar-3').style.transform='rotate(-35deg)translate(0.95em, 0em)';
 document.querySelector('.bar.bar-1').style.transition='600ms';
 
     }
 
 });
 
-
+const form = document.querySelector('form');
 
 window.onload = ('load',() => {
+    
     description.classList.add('description-animation');
+
+    form.classList.add('description-animation');
   });
+

@@ -1,27 +1,29 @@
-const navButton = document.querySelector('.menu-mobile');
+const navBtn = document.getElementById('nav-icon');
 
 const navContent = document.querySelector('.navigation-mobile');
 
 const description = document.querySelector('.description');
 
-navButton.addEventListener('click', function(){
-
+navBtn.addEventListener('click', function(){
 
     if(navContent.classList.contains('active')){
         navContent.classList.remove('active');
-        document.querySelector('.bar-1').classList.remove('open-1');
-        document.querySelector('.bar-2').classList.remove('open-2');
-        document.querySelector('.bar-3').classList.remove('open-3');
-
     } else {
         navContent.classList.add('active');
-    document.querySelector('.bar-1').classList.add('open-1');
-    document.querySelector('.bar-2').classList.add('open-2');
-    document.querySelector('.bar-3').classList.add('open-3');
      
     }
 
 });
+
+
+navBtn.addEventListener('click', ()=>{
+  if(navBtn.classList.contains('open')){
+    navBtn.classList.remove('open')
+  } else {
+    navBtn.classList.add('open');
+  }
+});
+
 
 const form = document.querySelector('form');
 

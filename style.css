@@ -1,11 +1,9 @@
 
-
-/*General Styling*/
 * {
-  padding: 0;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -30,15 +28,6 @@ h1,h2,h3,h4,h5, button {
   font-family: 'Merriweather', sans-serif;
 }
 
-
-/*Nav*/
-.menu-mobile {
-  display: none;
-}
-
-
-/*Page Content*/
-
 .content {
   min-height: 95vh;
   display: flex;
@@ -48,10 +37,12 @@ h1,h2,h3,h4,h5, button {
   
 }
 
+.menu-mobile {
+  display: none;
+}
 
 
-
-img.avatar {
+img {
   width: 200px;
   position: absolute;
   top: -3em;
@@ -138,7 +129,6 @@ footer {
     padding-top: 3em;
     overflow-x: none;
   }
-
 
   .menu-fullscreen {
     display: none;
@@ -295,22 +285,22 @@ footer {
 
 
 
+@media screen and (max-height:600px){
+  .content {
+    margin: 3em auto 0;
+  }
+
+}
+
 
 /*Contact Form*/
 
-
-.content.form {
-  margin: 0;
-  padding: 5vh 0;
-  min-height: 85vh;
-}
-
 form {
-  width: 80%;
-  min-height: 100%;
+  width: 70%;
+  min-height: 60vh;
+  padding: 0em 1em 2em;
   display: flex;
-  padding: 0 0 1em;
-  margin: 1em 0 0;
+  margin: 1em auto 0;
   background: whitesmoke;
   flex-direction: column;
   justify-content: center;
@@ -329,15 +319,12 @@ form {
 }
 
 .contact-row input {
-  width: 90%;
+  width: 100%;
   border: 0;
   border-width: 0px;
   padding: 1em 0 0.5em 1em;
   background: transparent;
   border-bottom: 2px solid lightgray;
-  border-radius: 0px;
-  text-align: left;
-  margin-right: auto;
 }
 
 .contact-row input:focus {
@@ -367,7 +354,6 @@ form {
   color: #fff;
   background: black;
   box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.3);
-  font-size: 20px;
 }
 
 button:focus {
